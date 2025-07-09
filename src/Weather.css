@@ -1,0 +1,81 @@
+/* Weather.css - Sexy Styling 🔥 */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: #fff;
+    text-align: center;
+    width: 320px;
+    animation: pop 0.4s ease;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  input {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff6b81;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+  }
+  
+  .weather-info {
+    margin-top: 25px;
+    text-align: left;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  
+  .weather-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info p {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+  
