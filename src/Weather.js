@@ -5,7 +5,7 @@ function Weather() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
-  const apiKey ="92c73dc3b566f9cf1250a2ab3f99149e";
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
   const getWeather = async () => {
     if (!city) return alert("Please enter a city!");
